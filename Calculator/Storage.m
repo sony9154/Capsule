@@ -10,7 +10,7 @@
 
 @interface Storage()
 
-@property (nonatomic) NSMutableDictionary *contactInfo;
+@property (nonatomic) NSMutableArray *contactInfo;
 
 @end
 
@@ -21,26 +21,55 @@
 {
     self = [super init];
     if (self) {
-        _contactInfo = [NSMutableDictionary new];
+        _contactInfo = [NSMutableArray new];
     }
     return  self;
 }
 
--(void)saveContact:(NSString *)name phoneNumber:(NSString *)number {
+/*
+-(void)addContactWithName:(NSString *)name phoneNumber:(NSString *)number {
     self.contactInfo[name] = number;
+}*/
+
+-(void) addContactWithName:(NSString*)name phoneNumber:(NSString*)number email:(NSString *)email {
+    
+    NSArray * personInfo = @[name,number,email];
+    [self.contactInfo addObject:personInfo];
+    
 }
 
--(NSDictionary*)loadContactList {
+-(NSArray*)contacts {
     return self.contactInfo;
 }
 
--(NSDictionary*) loadOnePerson:(NSString*)name {
-    NSString * phoneNumber = [self.contactInfo objectForKey:name];
-    NSDictionary * result = @{name : phoneNumber};
-    return result;
+-(NSArray*) contactFromName:(NSString*)name {
+    
+    for (NSArray * array in self.contactInfo) {
+        if([array[0] isEqualToString:name]) {
+            return array;
+        }
+
+    }
+    return nil;
 }
 
+-(void) insertContactWithIndex:(NSInteger)index name:(NSString*)name phoneNumber:(NSString*)number email:(NSString *)email {
+    
+    NSArray * personInfo = @[name,number,email];
+    [self.contactInfo insertObject:personInfo atIndex:index];
+    
+}
+
+
+-(void) removeContactWithIndex:(NSInteger)index {
+    [self.contactInfo removeObjectAtIndex:index];
+}
+
+
 @end
+
+
+
 
 
 

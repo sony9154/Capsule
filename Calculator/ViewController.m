@@ -29,12 +29,20 @@
     NSLog(@"%@", @(result4));
     
     Storage * storage = [Storage new];
-    [storage saveContact:@"Peter" phoneNumber:@"123"];
-    [storage saveContact:@"Mary" phoneNumber:@"456"];
-    NSDictionary * dictResult = [storage loadOnePerson:@"Mary"];
-    NSLog(@"%@",dictResult);
-    NSDictionary * arrayResult = [storage loadContactList];
+    [storage addContactWithName:@"A" phoneNumber:@"1" email:@"1@1.com"];
+    [storage addContactWithName:@"B" phoneNumber:@"2" email:@"2@2.com"];
+    [storage addContactWithName:@"F" phoneNumber:@"6" email:@"6@6.com"];
+    [storage addContactWithName:@"C" phoneNumber:@"3" email:@"3@3.com"];
+    [storage addContactWithName:@"D" phoneNumber:@"4" email:@"4@4.com"];
+    [storage addContactWithName:@"E" phoneNumber:@"5" email:@"5@5.com"];
+    [storage insertContactWithIndex:1 name:@"peter" phoneNumber:@"peter" email:@"peter"];
+    [storage removeContactWithIndex:0];
+    
+    NSArray * arrayResult = [storage contacts];
     NSLog(@"%@",arrayResult);
+    
+    NSArray * dictResult = [storage contactFromName:@"C"];
+    NSLog(@"%@",dictResult);
     
 }
 

@@ -8,10 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+
+
 @interface Storage : NSObject
 
--(void) saveContact:(NSString*)name phoneNumber:(NSString*)number;
--(NSDictionary*) loadContactList;
--(NSDictionary*) loadOnePerson:(NSString*)name;
+-(void) addContactWithName:(NSString*)name phoneNumber:(NSString*)number email:(NSString *)email;
+-(NSArray*) contacts;
+-(NSArray*) contactFromName:(NSString*)name;
+-(void) insertContactWithIndex:(NSInteger)index name:(NSString*)name phoneNumber:(NSString*)number email:(NSString *)email;
+-(void) removeContactWithIndex:(NSInteger)index ;
+
+
 
 @end
