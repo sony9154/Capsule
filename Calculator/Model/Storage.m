@@ -38,7 +38,7 @@
     
 }
 
--(NSArray*)contacts {
+-(NSArray*) contacts {
     return self.contactInfo;
 }
 

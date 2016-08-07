@@ -16,6 +16,7 @@
 		5D0E7B4E1D547EE10017879D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E7B4D1D547EE10017879D /* Calculator.m */; };
 		5D0E7B511D5493980017879D /* YORect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E7B501D5493980017879D /* YORect.m */; };
 		5D0E7B541D55CD1C0017879D /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E7B531D55CD1C0017879D /* Storage.m */; };
+		5D24C6531D573FC100E349EF /* ContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D24C6521D573FC100E349EF /* ContactTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,18 +24,20 @@
 		5D0E7B361D5479C30017879D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D0E7B381D5479C30017879D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D0E7B391D5479C30017879D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5D0E7B3B1D5479C30017879D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5D0E7B3C1D5479C30017879D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5D0E7B3B1D5479C30017879D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ViewController/ViewController.h; sourceTree = "<group>"; };
+		5D0E7B3C1D5479C30017879D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewController/ViewController.m; sourceTree = "<group>"; };
 		5D0E7B3F1D5479C30017879D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D0E7B411D5479C30017879D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D0E7B441D5479C30017879D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D0E7B461D5479C30017879D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D0E7B4C1D547EE10017879D /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
-		5D0E7B4D1D547EE10017879D /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
-		5D0E7B4F1D5493980017879D /* YORect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YORect.h; sourceTree = "<group>"; };
-		5D0E7B501D5493980017879D /* YORect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YORect.m; sourceTree = "<group>"; };
-		5D0E7B521D55CD1C0017879D /* Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
-		5D0E7B531D55CD1C0017879D /* Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Storage.m; sourceTree = "<group>"; };
+		5D0E7B4C1D547EE10017879D /* calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = calculator.h; path = Model/calculator.h; sourceTree = "<group>"; };
+		5D0E7B4D1D547EE10017879D /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Calculator.m; path = Model/Calculator.m; sourceTree = "<group>"; };
+		5D0E7B4F1D5493980017879D /* YORect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YORect.h; path = Model/YORect.h; sourceTree = "<group>"; };
+		5D0E7B501D5493980017879D /* YORect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YORect.m; path = Model/YORect.m; sourceTree = "<group>"; };
+		5D0E7B521D55CD1C0017879D /* Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Storage.h; path = Model/Storage.h; sourceTree = "<group>"; };
+		5D0E7B531D55CD1C0017879D /* Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Storage.m; path = Model/Storage.m; sourceTree = "<group>"; };
+		5D24C6511D573FC100E349EF /* ContactTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactTableViewController.h; path = ViewController/ContactTableViewController.h; sourceTree = "<group>"; };
+		5D24C6521D573FC100E349EF /* ContactTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactTableViewController.m; path = ViewController/ContactTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +72,9 @@
 			children = (
 				5D0E7B381D5479C30017879D /* AppDelegate.h */,
 				5D0E7B391D5479C30017879D /* AppDelegate.m */,
-				5D0E7B3B1D5479C30017879D /* ViewController.h */,
-				5D0E7B3C1D5479C30017879D /* ViewController.m */,
-				5D0E7B4F1D5493980017879D /* YORect.h */,
-				5D0E7B501D5493980017879D /* YORect.m */,
-				5D0E7B4C1D547EE10017879D /* Calculator.h */,
-				5D0E7B4D1D547EE10017879D /* Calculator.m */,
-				5D0E7B521D55CD1C0017879D /* Storage.h */,
-				5D0E7B531D55CD1C0017879D /* Storage.m */,
 				5D0E7B3E1D5479C30017879D /* Main.storyboard */,
+				5D24C6551D57778500E349EF /* ViewController */,
+				5D24C6541D57742400E349EF /* Model */,
 				5D0E7B411D5479C30017879D /* Assets.xcassets */,
 				5D0E7B431D5479C30017879D /* LaunchScreen.storyboard */,
 				5D0E7B461D5479C30017879D /* Info.plist */,
@@ -92,6 +89,30 @@
 				5D0E7B361D5479C30017879D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D24C6541D57742400E349EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D0E7B521D55CD1C0017879D /* Storage.h */,
+				5D0E7B531D55CD1C0017879D /* Storage.m */,
+				5D0E7B4C1D547EE10017879D /* calculator.h */,
+				5D0E7B4D1D547EE10017879D /* Calculator.m */,
+				5D0E7B4F1D5493980017879D /* YORect.h */,
+				5D0E7B501D5493980017879D /* YORect.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5D24C6551D57778500E349EF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D24C6511D573FC100E349EF /* ContactTableViewController.h */,
+				5D24C6521D573FC100E349EF /* ContactTableViewController.m */,
+				5D0E7B3B1D5479C30017879D /* ViewController.h */,
+				5D0E7B3C1D5479C30017879D /* ViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0E7B3D1D5479C30017879D /* ViewController.m in Sources */,
+				5D24C6531D573FC100E349EF /* ContactTableViewController.m in Sources */,
 				5D0E7B4E1D547EE10017879D /* Calculator.m in Sources */,
 				5D0E7B3A1D5479C30017879D /* AppDelegate.m in Sources */,
 				5D0E7B511D5493980017879D /* YORect.m in Sources */,
@@ -320,6 +342,7 @@
 				5D0E7B4B1D5479C30017879D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
