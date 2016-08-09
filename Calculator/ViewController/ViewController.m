@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Calculator.h"
 #import "Storage.h"
+#import "YOParser.h"
 
 @interface ViewController ()
 
@@ -28,14 +29,17 @@
     NSLog(@"%@", @(result3));
     NSLog(@"%@", @(result4));
     
+    YOParser * parser = [YOParser new];
+    NSArray * contInfo = [parser parse:[parser loadCSV]];
+    
+    //NSString * phoneNumber = contactArray[0][1];
+    //NSLog(@"%@",phoneNumber);
+    
     Storage * storage = [Storage new];
-    [storage addContactWithName:@"A" phoneNumber:@"1" email:@"1@1.com"];
-    [storage addContactWithName:@"B" phoneNumber:@"2" email:@"2@2.com"];
-    [storage addContactWithName:@"F" phoneNumber:@"6" email:@"6@6.com"];
-    [storage addContactWithName:@"C" phoneNumber:@"3" email:@"3@3.com"];
-    [storage addContactWithName:@"D" phoneNumber:@"4" email:@"4@4.com"];
-    [storage addContactWithName:@"E" phoneNumber:@"5" email:@"5@5.com"];
-    [storage insertContactWithIndex:1 name:@"peter" phoneNumber:@"peter" email:@"peter"];
+    for (NSArray * array in contInfo) {
+        [storage addContactWithName:array[0] phoneNumber:array[1] email:array[2]];
+    }
+    [storage insertContactWithIndex:1 name:@"我" phoneNumber:@"2952" email:@"yahoo@com"];
     [storage removeContactWithIndex:0];
     
     NSArray * arrayResult = [storage contacts];
@@ -44,10 +48,48 @@
     NSArray * dictResult = [storage contactFromName:@"C"];
     NSLog(@"%@",dictResult);
     
+    
+    /*NSArray * array = @[@(17),@(29),@(66),@(86),@(36),@(37),@(81)];
+    NSMutableArray *array = [NSMutableArray new];
+    [array addObjectsFromArray:@[@(17),@(29),@(66),@(86),@(36),@(37),@(81)]];
+    NSMutableArray * newArray1 = [NSMutableArray new];
+    
+    for(NSNumber * number in array) {
+        NSNumber * compareNumber = array[0];
+        if (compareNumber.intValue%10 == number.intValue%10) {
+            [newArray1 addObject:number];
+            //[array removeObject:number];
+        }
+    }
+    NSLog(@"%@",newArray1);
+    
+    /*for(int i=0 ; i < 7; i++) {
+        if(array.count){break;}
+            if([array[i]intValue]%10 == [array[i+1]intValue]%10) {
+                [newArray1 addObject:array[i+1]];
+                [array removeObject:array[i+1]];
+                if(array.count == 0) {
+                    break;
+                }
+            }
+    }
+    NSLog(@"%@",newArray1);*/
+    
 }
 
 
+
+
+
 @end
+
+
+
+
+
+
+
+
 
 
 

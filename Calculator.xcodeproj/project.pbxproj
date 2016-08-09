@@ -17,6 +17,8 @@
 		5D0E7B511D5493980017879D /* YORect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E7B501D5493980017879D /* YORect.m */; };
 		5D0E7B541D55CD1C0017879D /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E7B531D55CD1C0017879D /* Storage.m */; };
 		5D24C6531D573FC100E349EF /* ContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D24C6521D573FC100E349EF /* ContactTableViewController.m */; };
+		5D24C6581D582F0D00E349EF /* YOParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D24C6571D582F0D00E349EF /* YOParser.m */; };
+		5D68C92B1D5845B7002FAD50 /* contacts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5D68C92A1D5845B7002FAD50 /* contacts.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,9 @@
 		5D0E7B531D55CD1C0017879D /* Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Storage.m; path = Model/Storage.m; sourceTree = "<group>"; };
 		5D24C6511D573FC100E349EF /* ContactTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactTableViewController.h; path = ViewController/ContactTableViewController.h; sourceTree = "<group>"; };
 		5D24C6521D573FC100E349EF /* ContactTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactTableViewController.m; path = ViewController/ContactTableViewController.m; sourceTree = "<group>"; };
+		5D24C6561D582F0D00E349EF /* YOParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOParser.h; path = Model/YOParser.h; sourceTree = "<group>"; };
+		5D24C6571D582F0D00E349EF /* YOParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOParser.m; path = Model/YOParser.m; sourceTree = "<group>"; };
+		5D68C92A1D5845B7002FAD50 /* contacts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = contacts.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +78,7 @@
 				5D0E7B381D5479C30017879D /* AppDelegate.h */,
 				5D0E7B391D5479C30017879D /* AppDelegate.m */,
 				5D0E7B3E1D5479C30017879D /* Main.storyboard */,
+				5D68C92A1D5845B7002FAD50 /* contacts.csv */,
 				5D24C6551D57778500E349EF /* ViewController */,
 				5D24C6541D57742400E349EF /* Model */,
 				5D0E7B411D5479C30017879D /* Assets.xcassets */,
@@ -96,6 +102,8 @@
 			children = (
 				5D0E7B521D55CD1C0017879D /* Storage.h */,
 				5D0E7B531D55CD1C0017879D /* Storage.m */,
+				5D24C6561D582F0D00E349EF /* YOParser.h */,
+				5D24C6571D582F0D00E349EF /* YOParser.m */,
 				5D0E7B4C1D547EE10017879D /* calculator.h */,
 				5D0E7B4D1D547EE10017879D /* Calculator.m */,
 				5D0E7B4F1D5493980017879D /* YORect.h */,
@@ -173,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0E7B451D5479C30017879D /* LaunchScreen.storyboard in Resources */,
+				5D68C92B1D5845B7002FAD50 /* contacts.csv in Resources */,
 				5D0E7B421D5479C30017879D /* Assets.xcassets in Resources */,
 				5D0E7B401D5479C30017879D /* Main.storyboard in Resources */,
 			);
@@ -187,6 +196,7 @@
 			files = (
 				5D0E7B3D1D5479C30017879D /* ViewController.m in Sources */,
 				5D24C6531D573FC100E349EF /* ContactTableViewController.m in Sources */,
+				5D24C6581D582F0D00E349EF /* YOParser.m in Sources */,
 				5D0E7B4E1D547EE10017879D /* Calculator.m in Sources */,
 				5D0E7B3A1D5479C30017879D /* AppDelegate.m in Sources */,
 				5D0E7B511D5493980017879D /* YORect.m in Sources */,
