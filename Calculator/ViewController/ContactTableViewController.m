@@ -8,6 +8,7 @@
 
 #import "ContactTableViewController.h"
 #import "Storage.h"
+#import "YOContact.h"
 
 @interface ContactTableViewController ()
 @property (nonatomic) Storage * storage;
@@ -43,7 +44,7 @@
 
 
 - (IBAction)addContact:(id)sender {
-    
+    YOContact * contact = [YOContact new];
     UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"聯絡資訊" message:@"請填入聯絡人資訊" preferredStyle:UIAlertControllerStyleAlert];
     [alertController addTextFieldWithConfigurationHandler: ^(UITextField * _Nonnull textField) {
         [textField setPlaceholder:@"請在此填入姓名"];
@@ -62,8 +63,11 @@
         NSString * contactName = [[alertController textFields] objectAtIndex:0].text;
         NSString * contactPhone = [[alertController textFields] objectAtIndex:1].text;
         NSString * contactEmail = [[alertController textFields] objectAtIndex:2].text;
-        
-        [self.storage addContactWithName:contactName phoneNumber:contactPhone email:contactEmail];
+        contact.name = contactName;
+        contact.phoneNumber = contactPhone;
+        contact.email = contactEmail;
+        //[self.storage addContactWithName:contactName phoneNumber:contactPhone email:contactEmail];
+        [self.storage addContactWithContact:contact];
         
         [self.tableView reloadData];
         
@@ -79,9 +83,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
-    NSString * contactName = [self.storage contacts][indexPath.row][0];
-    NSString * contactPhoneNumber = [self.storage contacts][indexPath.row][1];
+    NSString * contactName = [self.storage contacts][indexPath.row].name;
+    NSString * contactPhoneNumber = [self.storage contacts][indexPath.row].phoneNumber;
     cell.textLabel.text = contactName;
     cell.detailTextLabel.text = contactPhoneNumber;
     return cell;

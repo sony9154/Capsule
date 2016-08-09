@@ -7,16 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YOContact.h"
 
 @interface Storage : NSObject
 
--(void) addContactWithName:(NSString*)name phoneNumber:(NSString*)number email:(NSString *)email;
+//-(void) addContactWithName:(NSString*)name phoneNumber:(NSString*)number email:(NSString *)email;
+-(void) addContactWithContact:(YOContact*)contact;
 
--(NSArray*) contacts;
+-(NSArray<YOContact *> *) contacts;
 
--(NSArray*) contactFromName:(NSString*)name;
+-(YOContact*) contactFromName:(NSString*)name;
 
--(void) insertContactWithIndex:(NSInteger)index name:(NSString*)name phoneNumber:(NSString*)number email:(NSString *)email;
+//-(void) insertContactWithIndex:(NSInteger)index name:(NSString*)name phoneNumber:(NSString*)number email:(NSString *)email;
+-(void) insertContactWithIndex:(NSInteger)index contact:(YOContact*)contact;
 
 -(void) removeContactWithIndex:(NSInteger)index ;
 
