@@ -14,4 +14,6 @@
 @property (nonatomic) NSString * phoneNumber;
 @property (nonatomic) NSString * email;
 
+-(id)initWithName:(NSString *)name phone:(NSString *)phoneNumber email:(NSString *)email;
+
 @end

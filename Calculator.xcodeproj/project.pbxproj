@@ -19,6 +19,16 @@
 		5D24C6531D573FC100E349EF /* ContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D24C6521D573FC100E349EF /* ContactTableViewController.m */; };
 		5D24C6581D582F0D00E349EF /* YOParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D24C6571D582F0D00E349EF /* YOParser.m */; };
 		5D68C92B1D5845B7002FAD50 /* contacts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5D68C92A1D5845B7002FAD50 /* contacts.csv */; };
+		5D7769E41D5AD5E7005E8DAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7769E31D5AD5E7005E8DAE /* main.m */; };
+		5D7769E71D5AD5E7005E8DAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7769E61D5AD5E7005E8DAE /* AppDelegate.m */; };
+		5D7769EA1D5AD5E7005E8DAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7769E91D5AD5E7005E8DAE /* ViewController.m */; };
+		5D7769ED1D5AD5E7005E8DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7769EB1D5AD5E7005E8DAE /* Main.storyboard */; };
+		5D7769EF1D5AD5E7005E8DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7769EE1D5AD5E7005E8DAE /* Assets.xcassets */; };
+		5D7769F21D5AD5E7005E8DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7769F01D5AD5E7005E8DAE /* LaunchScreen.storyboard */; };
+		5D7769F71D5AD5F4005E8DAE /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E7B531D55CD1C0017879D /* Storage.m */; };
+		5D7769F81D5AD5F7005E8DAE /* YOParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D24C6571D582F0D00E349EF /* YOParser.m */; };
+		5D7769F91D5AD5FB005E8DAE /* YOContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D993AD31D5A2828006665DA /* YOContact.m */; };
+		5D7769FA1D5B435E005E8DAE /* contacts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5D68C92A1D5845B7002FAD50 /* contacts.csv */; };
 		5D993AD41D5A2828006665DA /* YOContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D993AD31D5A2828006665DA /* YOContact.m */; };
 /* End PBXBuildFile section */
 
@@ -44,12 +54,29 @@
 		5D24C6561D582F0D00E349EF /* YOParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOParser.h; path = Model/YOParser.h; sourceTree = "<group>"; };
 		5D24C6571D582F0D00E349EF /* YOParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOParser.m; path = Model/YOParser.m; sourceTree = "<group>"; };
 		5D68C92A1D5845B7002FAD50 /* contacts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = contacts.csv; sourceTree = "<group>"; };
+		5D7769E01D5AD5E7005E8DAE /* CapsuleSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapsuleSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D7769E31D5AD5E7005E8DAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D7769E51D5AD5E7005E8DAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5D7769E61D5AD5E7005E8DAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5D7769E81D5AD5E7005E8DAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5D7769E91D5AD5E7005E8DAE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5D7769EC1D5AD5E7005E8DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D7769EE1D5AD5E7005E8DAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D7769F11D5AD5E7005E8DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D7769F31D5AD5E7005E8DAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D993AD21D5A2828006665DA /* YOContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOContact.h; sourceTree = "<group>"; };
 		5D993AD31D5A2828006665DA /* YOContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5D0E7B2F1D5479C30017879D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D7769DD1D5AD5E7005E8DAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				5D0E7B341D5479C30017879D /* Calculator */,
+				5D7769E11D5AD5E7005E8DAE /* CapsuleSample */,
 				5D0E7B331D5479C30017879D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				5D0E7B321D5479C30017879D /* Calculator.app */,
+				5D7769E01D5AD5E7005E8DAE /* CapsuleSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +157,30 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
+		5D7769E11D5AD5E7005E8DAE /* CapsuleSample */ = {
+			isa = PBXGroup;
+			children = (
+				5D7769E51D5AD5E7005E8DAE /* AppDelegate.h */,
+				5D7769E61D5AD5E7005E8DAE /* AppDelegate.m */,
+				5D7769E81D5AD5E7005E8DAE /* ViewController.h */,
+				5D7769E91D5AD5E7005E8DAE /* ViewController.m */,
+				5D7769EB1D5AD5E7005E8DAE /* Main.storyboard */,
+				5D7769EE1D5AD5E7005E8DAE /* Assets.xcassets */,
+				5D7769F01D5AD5E7005E8DAE /* LaunchScreen.storyboard */,
+				5D7769F31D5AD5E7005E8DAE /* Info.plist */,
+				5D7769E21D5AD5E7005E8DAE /* Supporting Files */,
+			);
+			path = CapsuleSample;
+			sourceTree = "<group>";
+		};
+		5D7769E21D5AD5E7005E8DAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D7769E31D5AD5E7005E8DAE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +201,23 @@
 			productReference = 5D0E7B321D5479C30017879D /* Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5D7769DF1D5AD5E7005E8DAE /* CapsuleSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D7769F61D5AD5E7005E8DAE /* Build configuration list for PBXNativeTarget "CapsuleSample" */;
+			buildPhases = (
+				5D7769DC1D5AD5E7005E8DAE /* Sources */,
+				5D7769DD1D5AD5E7005E8DAE /* Frameworks */,
+				5D7769DE1D5AD5E7005E8DAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CapsuleSample;
+			productName = CapsuleSample;
+			productReference = 5D7769E01D5AD5E7005E8DAE /* CapsuleSample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,6 +228,9 @@
 				ORGANIZATIONNAME = "Peter Hsu";
 				TargetAttributes = {
 					5D0E7B311D5479C30017879D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5D7769DF1D5AD5E7005E8DAE = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -176,6 +249,7 @@
 			projectRoot = "";
 			targets = (
 				5D0E7B311D5479C30017879D /* Calculator */,
+				5D7769DF1D5AD5E7005E8DAE /* CapsuleSample */,
 			);
 		};
 /* End PBXProject section */
@@ -189,6 +263,17 @@
 				5D68C92B1D5845B7002FAD50 /* contacts.csv in Resources */,
 				5D0E7B421D5479C30017879D /* Assets.xcassets in Resources */,
 				5D0E7B401D5479C30017879D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D7769DE1D5AD5E7005E8DAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7769F21D5AD5E7005E8DAE /* LaunchScreen.storyboard in Resources */,
+				5D7769FA1D5B435E005E8DAE /* contacts.csv in Resources */,
+				5D7769EF1D5AD5E7005E8DAE /* Assets.xcassets in Resources */,
+				5D7769ED1D5AD5E7005E8DAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +296,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5D7769DC1D5AD5E7005E8DAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7769F91D5AD5FB005E8DAE /* YOContact.m in Sources */,
+				5D7769EA1D5AD5E7005E8DAE /* ViewController.m in Sources */,
+				5D7769F71D5AD5F4005E8DAE /* Storage.m in Sources */,
+				5D7769E71D5AD5E7005E8DAE /* AppDelegate.m in Sources */,
+				5D7769F81D5AD5F7005E8DAE /* YOParser.m in Sources */,
+				5D7769E41D5AD5E7005E8DAE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -226,6 +324,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				5D0E7B441D5479C30017879D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5D7769EB1D5AD5E7005E8DAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D7769EC1D5AD5E7005E8DAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D7769F01D5AD5E7005E8DAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D7769F11D5AD5E7005E8DAE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -339,6 +453,28 @@
 			};
 			name = Release;
 		};
+		5D7769F41D5AD5E7005E8DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CapsuleSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.CapsuleSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5D7769F51D5AD5E7005E8DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CapsuleSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.CapsuleSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -359,6 +495,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5D7769F61D5AD5E7005E8DAE /* Build configuration list for PBXNativeTarget "CapsuleSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7769F41D5AD5E7005E8DAE /* Debug */,
+				5D7769F51D5AD5E7005E8DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,14 +7,20 @@
 //
 
 #import "YOParser.h"
-
+#import "YOContact.h"
 @implementation YOParser
 
-- (NSArray*) parse:(NSString*) string {
+- (NSArray<YOContact*>*) parse:(NSString*) string {
     NSArray * csvArray = [string componentsSeparatedByString:@"\n"];
-    NSMutableArray * personInfoArray = [NSMutableArray new];
+    NSMutableArray<YOContact*> * personInfoArray = [NSMutableArray<YOContact*> new];
     for (NSString * personInfo in csvArray) {
-       [personInfoArray addObject:[[personInfo stringByReplacingOccurrencesOfString:@" " withString:@""] componentsSeparatedByString:@","]];
+        NSString * personInfoString = [personInfo stringByReplacingOccurrencesOfString:@" " withString:@""];
+        NSArray * contactInfoArray = [personInfoString componentsSeparatedByString:@","];
+        YOContact * contact = [YOContact new];
+        contact.name = contactInfoArray[0];
+        contact.phoneNumber = contactInfoArray[1];
+        contact.email = contactInfoArray[2];
+       [personInfoArray addObject:contact];
     }
     return personInfoArray;
 }

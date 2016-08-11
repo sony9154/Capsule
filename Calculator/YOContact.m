@@ -10,4 +10,16 @@
 
 @implementation YOContact
 
+-(id)initWithName:(NSString *)name phone:(NSString *)phoneNumber email:(NSString *)email {
+    
+    if(self = [super init])
+    {
+        [self setName:name];
+        [self setPhoneNumber:phoneNumber];
+        [self setEmail:email];
+    }
+    return self;
+    
+}
+
 @end
