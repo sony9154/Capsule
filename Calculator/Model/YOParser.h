@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YOContact.h"
 
 @interface YOParser : NSObject
 
 - (NSArray*) parse:(NSString*) string ;
 
 - (NSString *) loadCSV ;
+
+- (NSString*) parseToCSVstring:(NSArray<YOContact*>*)contacts ;
 
 @end

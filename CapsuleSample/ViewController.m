@@ -47,6 +47,8 @@
     NSArray * arrayResult = [storage contacts];
     NSLog(@"%@",arrayResult);
     
+    NSLog(@"parseToCSVstring is like %@",[parser parseToCSVstring:arrayResult]);
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,3 +56,8 @@
 }
 
 @end
+
+
+
+
+

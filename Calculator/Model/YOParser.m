@@ -34,6 +34,28 @@
     return fileContent;
 }
 
+
+- (NSString*) parseToCSVstring:(NSArray<YOContact*>*)contacts {
+    
+    NSMutableArray * contactsArray = [NSMutableArray new];
+    NSMutableArray * resultArray = [NSMutableArray new];
+    for (YOContact * contact in contacts) {
+        contactsArray[0] = contact.name;
+        contactsArray[1] = contact.phoneNumber;
+        contactsArray[2] = contact.email;
+        NSString * result = [contactsArray componentsJoinedByString:@","];
+        [resultArray addObject:result];
+    }
+    
+    NSString * result = [resultArray componentsJoinedByString:@","];
+
+    return result;
+    
+}
+
+
+
+
 @end
 
 

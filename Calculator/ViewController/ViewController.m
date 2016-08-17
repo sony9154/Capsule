@@ -51,7 +51,6 @@
 //    YOContact * contactResult = [storage contactFromName:@"Hu"];
 //    NSLog(@"%@",contactResult);
     
-    
 }
 
 
