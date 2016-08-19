@@ -1,33 +1,17 @@
-//
-//  HSUHttpRequest.h
-//  test0703
-//
-//  Created by Peter Yo on 7月/4/16.
-//  Copyright © 2016年 Peter Hsu. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
-@protocol HSUHttpRequest;
+// Forward declaration
+@class HSUHttpRequest;
 
+// Delegate's protocol
 @protocol HSUHttpRequestDelegate <NSObject>
-
 @required
-- (void)httpRequestDidGetResponseText:(id<HSUHttpRequest>)httpRequest;
+- (void)httpRequestDidGetData:(HSUHttpRequest *)httpRequest;
 @end
 
-@protocol HSUHttpRequest
-
-@required
-- (void)sendWithURL:(NSURL *)URL;
-- (void)setDelegate:(id<HSUHttpRequestDelegate>)delegate;
-- (NSString *)getResponseText;
-@optional
-+ (void)sendWithURL:(NSURL *)URL handler:(void (^)(NSString * responseText))handler;
-@end
-
-@interface HSUHttpRequest : NSObject<HSUHttpRequest,HSUHttpRequestDelegate>
-
-
-
+// HSUHttpRequest's interface
+@interface HSUHttpRequest : NSObject
+@property (nonatomic) NSData *data; // Data get from server
+@property (nonatomic, weak) id<HSUHttpRequestDelegate> delegate; // Use deletate to tell user you got data
+- (void)sendWithURL:(NSURL *)URL; // Request to server
 @end

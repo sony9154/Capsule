@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D0B2B161D644DC40031AC4B /* HSUHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B2B151D644DC40031AC4B /* HSUHttpRequest.m */; };
-		5D0B2B171D644DC40031AC4B /* HSUHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B2B151D644DC40031AC4B /* HSUHttpRequest.m */; };
+		5D09D49E1D659E7900DE56CA /* HSUHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D09D49C1D659E7900DE56CA /* HSUHttpRequest.m */; };
+		5D09D49F1D659E7900DE56CA /* HSUHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D09D49C1D659E7900DE56CA /* HSUHttpRequest.m */; };
 		5D0E7B371D5479C30017879D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E7B361D5479C30017879D /* main.m */; };
 		5D0E7B3A1D5479C30017879D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E7B391D5479C30017879D /* AppDelegate.m */; };
 		5D0E7B3D1D5479C30017879D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E7B3C1D5479C30017879D /* ViewController.m */; };
@@ -35,8 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D0B2B141D644DC40031AC4B /* HSUHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSUHttpRequest.h; sourceTree = "<group>"; };
-		5D0B2B151D644DC40031AC4B /* HSUHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSUHttpRequest.m; sourceTree = "<group>"; };
+		5D09D49C1D659E7900DE56CA /* HSUHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSUHttpRequest.m; sourceTree = "<group>"; };
+		5D09D49D1D659E7900DE56CA /* HSUHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSUHttpRequest.h; sourceTree = "<group>"; };
 		5D0E7B321D5479C30017879D /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0E7B361D5479C30017879D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D0E7B381D5479C30017879D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,8 +142,8 @@
 				5D24C6571D582F0D00E349EF /* YOParser.m */,
 				5D993AD21D5A2828006665DA /* YOContact.h */,
 				5D993AD31D5A2828006665DA /* YOContact.m */,
-				5D0B2B141D644DC40031AC4B /* HSUHttpRequest.h */,
-				5D0B2B151D644DC40031AC4B /* HSUHttpRequest.m */,
+				5D09D49D1D659E7900DE56CA /* HSUHttpRequest.h */,
+				5D09D49C1D659E7900DE56CA /* HSUHttpRequest.m */,
 				5D0E7B4C1D547EE10017879D /* calculator.h */,
 				5D0E7B4D1D547EE10017879D /* Calculator.m */,
 				5D0E7B4F1D5493980017879D /* YORect.h */,
@@ -298,7 +298,7 @@
 				5D0E7B3A1D5479C30017879D /* AppDelegate.m in Sources */,
 				5D0E7B511D5493980017879D /* YORect.m in Sources */,
 				5D0E7B371D5479C30017879D /* main.m in Sources */,
-				5D0B2B161D644DC40031AC4B /* HSUHttpRequest.m in Sources */,
+				5D09D49E1D659E7900DE56CA /* HSUHttpRequest.m in Sources */,
 				5D0E7B541D55CD1C0017879D /* Storage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +312,7 @@
 				5D7769F71D5AD5F4005E8DAE /* Storage.m in Sources */,
 				5D7769E71D5AD5E7005E8DAE /* AppDelegate.m in Sources */,
 				5D7769F81D5AD5F7005E8DAE /* YOParser.m in Sources */,
-				5D0B2B171D644DC40031AC4B /* HSUHttpRequest.m in Sources */,
+				5D09D49F1D659E7900DE56CA /* HSUHttpRequest.m in Sources */,
 				5D7769E41D5AD5E7005E8DAE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
