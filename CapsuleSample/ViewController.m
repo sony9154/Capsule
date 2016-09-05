@@ -19,24 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    YOContact *contact = [YOContact new];
-//    contact.name = @"hoge";
-//    contact.phoneNumber = @"1234";
-//    contact.email = @"hoge@com";
-    
+
     // TODO : Do this!
     YOContact * contact = [[YOContact alloc]initWithName:@"hoge" phone:@"1234" email:@"hoge@com"];
     YOContact * contact2 = [[YOContact alloc]initWithName:@"fuga" phone:@"5678" email:@"fuga@com"];
-    
     Storage *storage = [Storage new];
     [storage addContactWithContact:contact];
     [storage addContactWithContact:contact2];
-    
-    NSArray *contacts = [storage contacts];
-    for (YOContact *contact in contacts) {
+    NSArray * contacts = [storage contacts];
+    for (YOContact * contact in contacts) {
         NSLog(@"%@ %@ %@", contact.name, contact.phoneNumber, contact.email);
     }
-//    Storage *storage = [Storage new];
     YOParser * parser = [YOParser new];
     NSString * csvString = [NSString new];
     csvString = [parser loadCSV];
@@ -46,9 +39,13 @@
     }
     NSArray * arrayResult = [storage contacts];
     NSLog(@"%@",arrayResult);
-    
     NSLog(@"parseToCSVstring is like %@",[parser parseToCSVstring:arrayResult]);
     
+}
+
+- (void)httpRequestDidGetData:(HSUHttpRequest *)httpRequest {
+    NSLog(@"I got data !");
+    self.data = httpRequest.data;
 }
 
 - (void)didReceiveMemoryWarning {

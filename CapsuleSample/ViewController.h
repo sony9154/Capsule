@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HSUHttpRequest.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<HSUHttpRequestDelegate>
 
+@property (nonatomic) NSData * data;
 
 @end
 

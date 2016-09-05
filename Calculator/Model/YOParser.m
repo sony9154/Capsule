@@ -10,9 +10,9 @@
 #import "YOContact.h"
 @implementation YOParser
 
-- (NSArray<YOContact*>*) parse:(NSString*) string {
+- (NSArray<YOContact *>*) parse:(NSString*) string {
     NSArray * csvArray = [string componentsSeparatedByString:@"\n"];
-    NSMutableArray<YOContact*> * personInfoArray = [NSMutableArray<YOContact*> new];
+    NSMutableArray<YOContact *> * personInfoArray = [NSMutableArray<YOContact *> new];
     for (NSString * personInfo in csvArray) {
         NSString * personInfoString = [personInfo stringByReplacingOccurrencesOfString:@" " withString:@""];
         NSArray * contactInfoArray = [personInfoString componentsSeparatedByString:@","];
@@ -30,12 +30,11 @@
     
     NSString * csvFilePath = [[NSBundle mainBundle] pathForResource:@"contacts" ofType:@"csv"];
     NSString * fileContent = [[NSString alloc] initWithContentsOfFile:csvFilePath encoding:NSUTF8StringEncoding error:nil];
-    //NSLog(@"%@",fileContent);
     return fileContent;
 }
 
 
-- (NSString*) parseToCSVstring:(NSArray<YOContact*>*)contacts {
+- (NSString *) parseToCSVstring:(NSArray<YOContact *>*)contacts {
     
     NSMutableArray * contactsArray = [NSMutableArray new];
     NSMutableArray * resultArray = [NSMutableArray new];
@@ -48,7 +47,6 @@
     }
     
     NSString * result = [resultArray componentsJoinedByString:@","];
-
     return result;
     
 }

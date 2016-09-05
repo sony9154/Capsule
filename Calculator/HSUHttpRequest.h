@@ -11,7 +11,7 @@
 
 // HSUHttpRequest's interface
 @interface HSUHttpRequest : NSObject
-@property (nonatomic) NSData *data; // Data get from server
+@property (nonatomic) NSData * data; // Data get from server
 @property (nonatomic, weak) id<HSUHttpRequestDelegate> delegate; // Use deletate to tell user you got data
 - (void)sendWithURL:(NSURL *)URL; // Request to server
 @end

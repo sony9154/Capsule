@@ -93,7 +93,7 @@
 		5D0E7B291D5479C30017879D = {
 			isa = PBXGroup;
 			children = (
-				5D0E7B341D5479C30017879D /* Calculator */,
+				5D0E7B341D5479C30017879D /* Contacts */,
 				5D7769E11D5AD5E7005E8DAE /* CapsuleSample */,
 				5D0E7B331D5479C30017879D /* Products */,
 			);
@@ -108,7 +108,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D0E7B341D5479C30017879D /* Calculator */ = {
+		5D0E7B341D5479C30017879D /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
 				5D0E7B381D5479C30017879D /* AppDelegate.h */,
@@ -122,6 +122,7 @@
 				5D0E7B461D5479C30017879D /* Info.plist */,
 				5D0E7B351D5479C30017879D /* Supporting Files */,
 			);
+			name = Contacts;
 			path = Calculator;
 			sourceTree = "<group>";
 		};

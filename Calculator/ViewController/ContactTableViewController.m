@@ -17,14 +17,10 @@
 @implementation ContactTableViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    
     self.storage = [Storage new];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,11 +30,11 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView*)tableView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.storage contacts].count;
 }
 
@@ -49,7 +45,6 @@
     [alertController addTextFieldWithConfigurationHandler: ^(UITextField * _Nonnull textField) {
         [textField setPlaceholder:@"請在此填入姓名"];
     }];
-    
     [alertController addTextFieldWithConfigurationHandler: ^(UITextField * _Nonnull textField) {
         [textField setPlaceholder:@"請填入電話"];
     }];
@@ -66,9 +61,7 @@
         contact.name = contactName;
         contact.phoneNumber = contactPhone;
         contact.email = contactEmail;
-        //[self.storage addContactWithName:contactName phoneNumber:contactPhone email:contactEmail];
         [self.storage addContactWithContact:contact];
-        
         [self.tableView reloadData];
         
     }];

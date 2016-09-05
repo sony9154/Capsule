@@ -43,18 +43,11 @@
     contact.phoneNumber = @"2952";
     contact.email = @"yahoo@com";
     [storage insertContactWithIndex:1 contact:contact];
-//    [storage removeContactWithIndex:0];
     
     NSArray * arrayResult = [storage contacts];
     NSLog(@"%@",arrayResult);
     
-//    YOContact * contactResult = [storage contactFromName:@"Hu"];
-//    NSLog(@"%@",contactResult);
-    
 }
-
-
-
 
 
 @end

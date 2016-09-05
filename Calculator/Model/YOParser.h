@@ -11,10 +11,10 @@
 
 @interface YOParser : NSObject
 
-- (NSArray*) parse:(NSString*) string ;
+- (NSArray *) parse:(NSString *) string ;
 
 - (NSString *) loadCSV ;
 
-- (NSString*) parseToCSVstring:(NSArray<YOContact*>*)contacts ;
+- (NSString *) parseToCSVstring:(NSArray<YOContact *>*)contacts ;
 
 @end
