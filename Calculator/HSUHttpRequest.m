@@ -21,17 +21,15 @@
         NSLog(@"Request completion~!");
         if (!error) {
             self.data = data;
+            if ([self.delegate respondsToSelector:@selector(httpRequestDidGetData:)]) {
+                [self.delegate httpRequestDidGetData:self];
+            }
         } else {
             NSLog(@"error : %@", error.localizedFailureReason);
         }
         
     }];
     [task resume];
-    
-    if ([self.delegate respondsToSelector:@selector(httpRequestDidGetData:)]) {
-        [self.delegate httpRequestDidGetData:self];
-    }
-    
 }
 
 @end
